@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faktoriyel</title>
+    <style>
+      body{
+        text-align: center;
+        font-size: 20px ;
+
+      }
+      #num{
+        padding: 3px;
+        margin: 3px;
+        font-size: 20px;
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 3px;
+      }
+      #btn{
+        padding: 3px;
+        margin: 3px;
+        font-size: 20px;
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 3px;
+        background: #dc0000;
+        color: yellow;
+      }
+      #res{
+        text-align: center;
+        font-size: 20px;
+
+      }
+
+    </style>
+
+</head>
+<body>
+<h2>Faktoriyel Hesabı</h2>
+Tam sayı giriniz : <input id="num"><br><br>
+<button onclick="fact()" id="btn">Faktoriyeli hesapla</button><br>
+<p id="res"></p>
+
+<script>
+  function fact() {
+    var i ,sayı ,f;
+    f=1;
+    sayı=document.getElementById("num").value;
+    for(i=1;i<=sayı;i++){
+      f = f*i;
+    }
+    document.getElementById("res").innerHTML= sayı +"! = "+f;
+  }
+</script>
+</body>
+</html>
